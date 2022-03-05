@@ -1,37 +1,39 @@
-import "./styles.css";
 
-const form = document.querySelector("form");
-var input = document.getElementsByTagName('input')
-var name = document.querySelector('#name');
-var email = document.querySelector('#email');
-var phone = document.querySelector('#phone');
-var message = document.querySelector('#message');
-var send = document.querySelector('send')
+const form = document.querySelector('#myform');
+const cancelBtn = document.querySelector('#cancel');
 
-function submitForm(event) {
-  event.preventDefault();
+const sendBtn = document.querySelector('#send');
+let namef = document.querySelector('input[type=text]');
+let email = document.querySelector('input[type=email]');
+let phone = document.querySelector('input[type=tel]');
+let message = document.querySelector('#message');
 
-  if (name.value ==='') {
-    // alert("all input boxes must be filled");
-console.log("i am here");
-    // return;
-  }
 
-  // if (emailInput.value === "") {
-  //   h2Element.innerText = "Email is required";
 
-  //   return;
-  // }
 
-  // if (passwordInput.value === "") {
-  //   h2Element.textContent = "Password is required";
 
-  //   return;
-  // }
-
-  // var nameStr = nameInput.value;
-
-  // h2Element.textContent = "Welcome " + nameStr;
+function cancel(e) {
+  // e.preventDefault();
+  namef.value= '';
+  email.value = '';
+  phone.value = '';
+  message.value = '';
 }
+cancelBtn.addEventListener('click', cancel())
 
-form.addEventListener("submit", submitForm());
+let msgArr = Array.from(message.value)
+
+function send(e) {
+  // e.preventDefault();
+  if (namef=== ''|| email.value === '' || phone.value === '' || message.value === '') {
+    alert("all input boxes must be filled");
+  }
+  else if (phone.value[type] !== Number) {
+    alert("phone number field must only contain numbers");
+  }
+  else if (msgArr.length > 100) {
+    alert("message field cannot have more than 100 characters");
+  } else {
+    alert(`welcome ${namef.value}`);
+  }
+}

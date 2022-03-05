@@ -8,7 +8,7 @@ Also implement the following functionality using JavaScript alone. jquery and ot
 
 - When a user clicks submit, first check to see if any of the input boxes are empty
 
-- If any of the input boxes are empty, respond using window.alert with the message `all input boxes must be filled`.
+- If any of the input boxes are empty, respond using window.alert with the message `"all input boxes must be filled"`.
 
 - If all the input boxes are filled but the phone number field does not contain only numbers, respond using window.alert with the message `phone number field must only contain numbers`
 
