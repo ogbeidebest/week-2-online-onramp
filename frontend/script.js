@@ -1,36 +1,37 @@
 import "./styles.css";
 
 const form = document.querySelector("form");
-
-var h2Element = document.querySelector(".alert");
-var nameInput = document.getElementById("name");
-var emailInput = document.getElementById("email");
-var passwordInput = document.getElementById("password");
+var input = document.getElementsByTagName('input')
+var name = document.querySelector('#name');
+var email = document.querySelector('#email');
+var phone = document.querySelector('#phone');
+var message = document.querySelector('#message');
+var send = document.querySelector('send')
 
 function submitForm(event) {
   event.preventDefault();
 
-  if (nameInput.value === "") {
-    h2Element.textContent = "Name is required";
-
-    return;
+  if (name.value ==='') {
+    // alert("all input boxes must be filled");
+console.log("i am here");
+    // return;
   }
 
-  if (emailInput.value === "") {
-    h2Element.innerText = "Email is required";
+  // if (emailInput.value === "") {
+  //   h2Element.innerText = "Email is required";
 
-    return;
-  }
+  //   return;
+  // }
 
-  if (passwordInput.value === "") {
-    h2Element.textContent = "Password is required";
+  // if (passwordInput.value === "") {
+  //   h2Element.textContent = "Password is required";
 
-    return;
-  }
+  //   return;
+  // }
 
-  var nameStr = nameInput.value;
+  // var nameStr = nameInput.value;
 
-  h2Element.textContent = "Welcome " + nameStr;
+  // h2Element.textContent = "Welcome " + nameStr;
 }
 
-form.addEventListener("submit", submitForm);
+form.addEventListener("submit", submitForm());

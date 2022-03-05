@@ -1,105 +1,48 @@
-body {
-  background-color: rgb(15, 14, 14);
-  font-family: sans-serif;
-  color: #444347;
+*,body,html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-a {
-  text-decoration: none;
-  font-size: 14px;
+body{
+  background-color: rgb(235, 48, 110);
 }
-
-form {
-  /* border: 2px solid red; */
-  width: 300px;
-  height: 100%;
-  padding: 10px;
-  margin: auto;
-}
-
-form h2 {
-  /* border: 1px solid red; */
-  /* width: 150px; */
-  font-size: 20px;
-  font-weight: bolder;
-  color: red;
-}
-
-.form-group {
-  /* border: 1px solid red; */
-  padding-bottom: 20px;
-  width: 250px;
-}
-
-form input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 85%;
-  border: none;
-  outline: none;
-  padding: 10px;
-  margin-top: 6px;
-  border-radius: 7px;
-  font-size: 14px;
-  background-color: #f5f7fb;
-}
-
-.form-group label {
-  font-size: 14px;
-  /* border: 1px solid red; */
-}
-
-#signup {
-  /* border: 2px solid green; */
-  padding: 10px 50px;
-  outline: none;
-  background-color: red;
-  color: #fff;
-  border-radius: 7px;
-  font-weight: bolder;
-}
-
-#signin {
-  border: 0px;
-  padding: 10px;
-  margin-block-start: 10px;
-  color: red;
-  font-weight: bolder;
-}
-
-.imageHolder {
-  width: 200px;
-  /* border: 1px solid green; */
-  padding-right: 50px;
-  padding-top: 50px;
-  position: relative;
-}
-
-img {
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.overlay {
-  /* border: 1px solid red; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.overlay h2 {
-  color: #fff;
-  margin-top: 270px;
-}
-
-.app {
-  /* border: 2px solid red; */
-  width: 40vw;
+.form-section{
   display: flex;
-  margin: 100px auto;
-  background-color: hsl(0, 0%, 90%);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+ padding: 10%;
+
+}
+.container{
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 3em ;
+  border-radius: 10px;
+ width: auto;
+justify-content: space-between;
+}
+.container h1{
+margin-right: 100px;
+color:rgb(235, 48, 110); ;
+width: 20%;
+border-bottom: 4px rgb(235, 48, 110);;
+}
+
+.container input{
+  padding: 6%;
+  border:  0;
+border-bottom: 2px solid rgb(67, 52, 52) ;
+  background-color: black;
+}
+.container .message{
+  padding-top: 20%;
+} .container button{
+  float: right;
+  color: rgb(235, 48, 110);
+  border: 0;
+  padding: 10px;
+  background-color: black;
 }

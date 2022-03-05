@@ -20,7 +20,11 @@ function missingNumber(numArr) {
     if (result.length === 0) {
         return "false"
 
-    } else {
+    }
+    else if (result.length === 1) {
+        return result[0];
+    }
+    else {
         let sorted = result.sort(
             function (a, b) {
                 return a - b
