@@ -5,6 +5,7 @@
 }
 body{
   background-color: rgb(235, 48, 110);
+  /* overflow-x: hidden; */
 }
 .form-section{
   display: flex;
@@ -13,6 +14,7 @@ body{
   align-content: center;
   margin: auto;
  padding: 10%;
+ height: 100vh;
 
 }
 .container{
@@ -25,7 +27,7 @@ body{
 justify-content: space-between;
 }
 .container h1{
-margin-right: 100px;
+margin-right: 50px;
 color:rgb(235, 48, 110); ;
 width: 20%;
 border-bottom: 4px rgb(235, 48, 110);;
@@ -39,10 +41,28 @@ border-bottom: 2px solid rgb(67, 52, 52) ;
 }
 .container .message{
   padding-top: 20%;
-} .container button{
+} 
+.container button{
   float: right;
   color: rgb(235, 48, 110);
   border: 0;
   padding: 10px;
   background-color: black;
 }
+
+
+
+ /* @media only screen and (max-width: 425px){
+.container{
+  padding: 5px ;
+}
+
+.container input{
+  padding: 10px;
+}
+.container h1{
+font-size: 20px;
+width: 30px;
+
+}
+ } */
